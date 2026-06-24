@@ -25,8 +25,7 @@
 A Python-based calculator app supporting standard arithmetic operations.
 *(Add 1-2 lines here: e.g. "Built with Tkinter for a simple GUI" or "CLI-based calculator with error handling for invalid input.")*
 
-#### 💼 Internship Project
-*(Add: company/program name, domain, and a 1-2 line summary of what the project did and what your role was.)*
+
 
 #### 📊 [Credit Risk / Text Classification Model](https://github.com/gayathri499/CodeAlpha_credit_scoring_mode1)
 A machine learning pipeline that classifies text data using TF-IDF feature extraction with Naive Bayes and SVM classifiers, evaluated using accuracy and classification reports.
