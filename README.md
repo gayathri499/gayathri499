@@ -44,4 +44,4 @@ A machine learning pipeline that classifies text data using TF-IDF feature extra
 [![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=flat&logo=leetcode&logoColor=black)](https://leetcode.com/u/Srigayathri_111/)
 [![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:srigayathrimurugan.mani@gmail.com)
 
-📄 **Resume:** [Link to resume](https://docs.google.com/document/d/1nSBdoFopPtszRXIZIan71FUetupNp6Ea/edit?usp=drive_web&ouid=107375056870657605589&rtpof=true&pli=1&authuser=0) *(replace `#` with a Google Drive/Dropbox share link, or host it in this repo as `resume.pdf` and link it here)*
+📄 **Resume:** [Link to resume](https://docs.google.com/document/d/1nSBdoFopPtszRXIZIan71FUetupNp6Ea/edit?usp=drive_web&ouid=107375056870657605589&rtpof=true&pli=1&authuser=0) 
