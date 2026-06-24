@@ -1,98 +1,47 @@
-{
- "cells": [
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "import pandas as pd\n",
-    "from sklearn.feature_extraction.text import CountVectorizer,TfidfTransformer\n",
-    "from sklearn.model_selection import train_test_split\n",
-    "from sklearn.naive_bayes import MultinomialNB\n",
-    "from sklearn.svm import SVC\n",
-    "from sklearn.metrics import accuracy_score,classification_report"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "data=pd.read_csv(\"emails.csv\")\n",
-    "x=data['text']\n",
-    "y=data['label']\n",
-    "vectorizer=CountVectorizer()\n",
-    "x_counts=vectorizer.fit_transform(x)\n",
-    "tfidf_transformer=TfidfTransformer()\n",
-    "x_tfidf=tfidf_transformer.fit_transform(x_counts)\n"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "X_train,X_test,y_train,y_test=train_test_split(x_tfidf,y,test_size=0.2,random_state=42)"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "nb_model=MultinomialNB()\n",
-    "nb_model.fit(X_train,y_train)\n",
-    "y_pred_nb=nb_model.predict(X_test)\n",
-    "print(\"Naive Bayes Classification Report\")\n",
-    "print(classification_report(y_test,y_pred_nb))\n",
-    "print(\"Accuracy\",accuracy_score(y_test,y_pred_nb))"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "svm_model=SVC(kernel='linear')\n",
-    "svm_model.fit(X_train,y_train)\n",
-    "y_pred_svm=svm_model.predict(X_test)\n",
-    "print(\"SVM Classification Report\")\n",
-    "print(classification_report(y_test,y_pred_svm))\n",
-    "print(\"Accuracy\",accuracy_score(y_test,y_pred_svm))"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": []
-  }
- ],
- "metadata": {
-  "kernelspec": {
-   "display_name": "Python 3",
-   "language": "python",
-   "name": "python3"
-  },
-  "language_info": {
-   "codemirror_mode": {
-    "name": "ipython",
-    "version": 3
-   },
-   "file_extension": ".py",
-   "mimetype": "text/x-python",
-   "name": "python",
-   "nbconvert_exporter": "python",
-   "pygments_lexer": "ipython3",
-   "version": "3.12.4"
-  }
- },
- "nbformat": 4,
- "nbformat_minor": 2
-}
+# Hi, I'm Srigayathri M 👋
+
+🎓 Final-year B.Tech student in Artificial Intelligence & Data Science
+🎯 Seeking Data Scientist / ML Engineer roles — open to opportunities
+🧩 959+ problems solved on [LeetCode](https://leetcode.com/u/Srigayathri_111/) — 365-day solving streak
+📍 India
+
+---
+
+### 🔭 What I'm working on
+- Building hands-on ML projects in classification, prediction, and data-driven decision-making
+- Sharpening data structures & algorithms fundamentals daily on LeetCode
+- Learning to write production-quality, well-documented code
+
+### 🛠️ Tech Stack
+**Languages:** Python, Java, C++
+**ML/Data:** scikit-learn, pandas, NumPy
+**Tools:** Jupyter Notebook, Git/GitHub
+
+---
+
+### 📌 Featured Projects
+
+#### 🧮 [Calculator App](https://github.com/gayathri499/Calculator-app-using-python)
+A Python-based calculator app supporting standard arithmetic operations.
+*(Add 1-2 lines here: e.g. "Built with Tkinter for a simple GUI" or "CLI-based calculator with error handling for invalid input.")*
+
+#### 💼 Internship Project
+*(Add: company/program name, domain, and a 1-2 line summary of what the project did and what your role was.)*
+
+#### 📊 [Credit Risk / Text Classification Model](https://github.com/gayathri499/CodeAlpha_credit_scoring_mode1)
+A machine learning pipeline that classifies text data using TF-IDF feature extraction with Naive Bayes and SVM classifiers, evaluated using accuracy and classification reports.
+*(Double check: this looks like a text/email classification model, not a numeric credit-scoring model. Update this description to match what the project actually predicts.)*
+
+---
+
+### 📈 LeetCode Stats
+[![LeetCode Srigayathri_111](https://leetcode-stats-card.vercel.app/render/api?username=Srigayathri_111)](https://leetcode.com/u/Srigayathri_111/)
+
+---
+
+### 🤝 Connect with me
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/srigayathri-m-293ba22ba)
+[![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=flat&logo=leetcode&logoColor=black)](https://leetcode.com/u/Srigayathri_111/)
+[![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:srigayathrimurugan.mani@gmail.com)
+
+📄 **Resume:** [Link to resume](https://docs.google.com/document/d/1nSBdoFopPtszRXIZIan71FUetupNp6Ea/edit?usp=drive_web&ouid=107375056870657605589&rtpof=true&pli=1&authuser=0) *(replace `#` with a Google Drive/Dropbox share link, or host it in this repo as `resume.pdf` and link it here)*
